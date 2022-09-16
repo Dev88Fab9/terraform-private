@@ -5,7 +5,13 @@ variable "net_type" {
 	default = "bridged"
 	}
 	
-variable "vms" {
-    type=set(string)
-	default = ["lb01", "lb02"]
-			   }
+
+variable "vm_prefix" {
+	default = "test-lb"
+	type = string
+}
+
+variable "vm_count" {
+	default = 2
+	type = string
+}
